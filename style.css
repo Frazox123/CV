@@ -87,6 +87,7 @@ h1
 }
 .well p{
     font-weight: bolder;
+    font-size: 100%;
 }
 .cert:hover{
     width: 320px;
@@ -144,12 +145,31 @@ h2{
 
 
 /* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 1300px) {
     .sidenav {
         padding-top: 15px;
     }
 
     .sidenav a {
         font-size: 18px;
+    }
+    img{
+        width: 100%;
+    }
+    .cert{
+        width: 100%;
+    }
+    .cert:hover{
+        width: 100%;
+    }
+    .well:hover
+    {
+        box-shadow: 0 0 20px black;
+        cursor: pointer;
+        height: 300px;
+    }
+    .well
+    {
+    height: 300px;
     }
 }
