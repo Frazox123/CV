@@ -1,0 +1,155 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css");
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    font-size: 20px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+h1
+{
+    font-size: 70px;
+}
+.well{
+    width: 30%;
+    background-color: lightgrey;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: .5s;
+    border-radius: 25px;
+}
+.cert{
+    width: 300px;
+    border-radius: 25px;
+    transition: 1s;
+}
+.well p{
+    font-weight: bolder;
+}
+.cert:hover{
+    width: 320px;
+}
+.well:hover
+{
+    box-shadow: 0 0 20px black;
+    height: 320px;
+    width: 32%;
+
+    cursor: pointer;
+}
+
+.textanimation {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Anonymous Pro", monospace;
+    letter-spacing: 7px;
+    overflow: hidden;
+    border-right: 2px solid hsl(0, 0%, 80%);
+    white-space: nowrap;
+    animation: typewrite 1s steps(44) 1s 1 normal both, cursortext .5s infinite;
+
+}
+ul{
+    list-style: none;
+}
+h2{
+    text-align: center;
+    font-weight: bolder;
+}
+@keyframes typewrite {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 430px;
+    }
+}
+
+@keyframes cursortext {
+    from {
+        border-right: 2px solid hsl(0, 0%, 80%);
+
+    }
+
+    to {
+        border: none;
+    }
+}
+
+
+
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
